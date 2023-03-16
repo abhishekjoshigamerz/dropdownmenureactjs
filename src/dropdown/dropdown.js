@@ -24,9 +24,9 @@ function Dropdown({ options }) {
   return (
     <>
     
-    <div className="dropdown" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <div className="dropdown"  onMouseLeave={handleMouseLeave}>
     <h2>Dropdown Menu item</h2>
-      <button onClick={() => setButtonText('Dropdown')} className='dropDownTitle'>{buttonText}</button>
+      <button onClick={() => setButtonText('Dropdown')} className='dropDownTitle' onMouseEnter={handleMouseEnter}>{buttonText}</button>
       {isOpen && (
         <ul className="dropdown-menu">
           
