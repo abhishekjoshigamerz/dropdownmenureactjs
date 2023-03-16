@@ -4,15 +4,17 @@ import './dropdown.css';
 function Dropdown({ options }) {
   const [isOpen, setIsOpen] = useState(false);
   const [buttonText, setButtonText] = useState('Dropdown');
-
+  //when user hovers on drop down menu
   const handleMouseEnter = () => {
     setIsOpen(true);
   };
 
+  //when user leaves drop down menu
   const handleMouseLeave = () => {
     setIsOpen(false);
   };
 
+  //when user clicks on an option
   const clickOnOption = (id) => {
     setIsOpen(false);
     // Do something with the selected option
